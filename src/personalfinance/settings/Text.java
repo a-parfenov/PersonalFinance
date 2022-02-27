@@ -1,4 +1,4 @@
-package settings;
+package personalfinance.settings;
 
 import java.util.HashMap;
 
@@ -8,6 +8,7 @@ public class Text {
     public static String get(String key) {
         return data.get(key);
     }
+
     public static String[] getMonths() {
         String[] months = new String[12];
         months[0] = get("JANUARY");
@@ -40,6 +41,19 @@ public class Text {
         data.put("OCTOBER", "Октябрь");
         data.put("NOVEMBER", "Ноябрь");
         data.put("DECEMBER", "Декабрь");
+
+        data.put("ERROR", "Ошибка");
+        data.put("ERROR_TITLE_EMPTY", "Вы не ввели название!");
+        data.put("ERROR_IS_EXISTS", "Такая запись уже существует!");
+        data.put("ERROR_DATE_FORMAT", "Некорректный формат даты!");
+        data.put("ERROR_CODE_EMPTY", "Вы не указали код!");
+        data.put("ERROR_CURRENCY_EMPTY", "Вы не выбрали валюту!");
+        data.put("ERROR_ARTICLE_EMPTY", "Вы не выбрали статью!");
+        data.put("ERROR_ACCOUNT_EMPTY", "Вы не выбрали счёт!");
+        data.put("ERROR_RATE_INCORRECT", "Некорректное значение курса!");
+        data.put("ERROR_AMOUNT_FORMAT", "Некорректный формат суммы!");
+        data.put("ERROR_NO_BASE_CURRENCY", "Необходима базовая валюта! Установите сначала этот параметр в другой валюте, потом он снимется в этой автоматически.");
+        data.put("ERROR_UPDATE_CURRENCIES", "Ошибка при обновлении курсов валют!");
 
         data.put("YES", "Да");
         data.put("NO", "Нет");
