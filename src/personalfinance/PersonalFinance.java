@@ -1,9 +1,9 @@
 package personalfinance;
 
+import personalfinance.settings.Settings;
 import personalfinance.settings.Text;
 
 import java.awt.*;
-import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.logging.Level;
@@ -19,7 +19,7 @@ public class PersonalFinance {
         try {
             Text.init();
             GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-            ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, new File("fonts/Roboto-Light.ttf")));
+            ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, Settings.FONT_ROBOTO_LIGHT));
         } catch (FontFormatException | IOException e) {
             Logger.getLogger(PersonalFinance.class.getName()).log(Level.SEVERE, null, e);
         }

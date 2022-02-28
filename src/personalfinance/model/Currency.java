@@ -8,8 +8,8 @@ public class Currency extends Common {
     private String title;
     private String code;
     private double rate;
-    private boolean isOn;
-    private boolean isBase;
+    private boolean On;
+    private boolean Base;
 
     public Currency() {}
 
@@ -26,11 +26,11 @@ public class Currency extends Common {
     }
 
     public void setOn(boolean on) {
-        isOn = on;
+        this.On = on;
     }
 
     public void setBase(boolean base) {
-        isBase = base;
+        this.Base = base;
     }
 
     public String getTitle() {
@@ -46,11 +46,11 @@ public class Currency extends Common {
     }
 
     public boolean isOn() {
-        return isOn;
+        return On;
     }
 
     public boolean isBase() {
-        return isBase;
+        return Base;
     }
 
     @Override
@@ -59,8 +59,8 @@ public class Currency extends Common {
                 "title='" + title + '\'' +
                 ", code='" + code + '\'' +
                 ", rate=" + rate +
-                ", isOn=" + isOn +
-                ", isBase=" + isBase +
+                ", isOn=" + On +
+                ", isBase=" + Base +
                 '}';
     }
 
@@ -90,8 +90,8 @@ public class Currency extends Common {
         this.title = title;
         this.code = code;
         this.rate = rate;
-        this.isBase = isBase;
-        this.isOn = isOn;
+        this.Base = isBase;
+        this.On = isOn;
     }
 
     @Override
