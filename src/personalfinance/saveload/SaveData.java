@@ -14,8 +14,22 @@ public class SaveData {
     private List<Transactions> transactionsList = new ArrayList<>();
     private List<Transfer> transferList = new ArrayList<>();
 
-    private SaveData() {}
+    private final Filter filter;
+    private Common aldCommon;
+    private boolean isSaved = true;
 
+    private SaveData() {
+        load();
+        this.filter = new Filter();
+    }
+    public void load() {
+        SaveLoad.load(this);
+
+    }
+
+    public Filter getFilter() {
+        return filter;
+    }
     public static SaveData getInstance() {
         if (instanse == null)
             instanse = new SaveData();
@@ -40,6 +54,26 @@ public class SaveData {
 
     public List<Transfer> getTransferList() {
         return transferList;
+    }
+
+    public void setArticleList(List<Article> articleList) {
+        this.articleList = articleList;
+    }
+
+    public void setCurrencyList(List<Currency> currencyList) {
+        this.currencyList = currencyList;
+    }
+
+    public void setAccountList(List<Account> accountList) {
+        this.accountList = accountList;
+    }
+
+    public void setTransactionsList(List<Transactions> transactionsList) {
+        this.transactionsList = transactionsList;
+    }
+
+    public void setTransferList(List<Transfer> transferList) {
+        this.transferList = transferList;
     }
 
     public Currency getBaseCurrency() {

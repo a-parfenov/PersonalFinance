@@ -6,7 +6,10 @@ public class Text {
     private static final HashMap<String, String> data = new HashMap<>();
 
     public static String get(String key) {
-        return data.get(key);
+        if (data.containsKey(key))
+            return data.get(key);
+        System.out.println("Такого ключа в Text не существует!");
+        return "";
     }
 
     public static String[] getMonths() {
