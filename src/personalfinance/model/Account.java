@@ -1,6 +1,7 @@
 package personalfinance.model;
 
 import personalfinance.exception.ModelException;
+import personalfinance.saveload.SaveData;
 
 import java.util.List;
 import java.util.Objects;
@@ -95,5 +96,24 @@ public class Account extends Common{
                 this.amount += transfer.getToAmount();
             }
         }
+    }
+
+    @Override
+    public void postAdd(SaveData sd) {
+        setAmountFromTransactionsAndTransfers(sd.getTransactionsList(), sd.getFilterTransfers());
+    }
+
+    @Override
+    public void postEdit(SaveData sd) {
+        for (Transactions t : sd.getTransactionsList())
+            if (sd.getAccountList().equals(sd.getOldCommon())) // сравниваем текущее значение с предыдущим
+                t.setAccount(this);
+        for (Transfer t : sd.getTransferList()) {
+            if (t.getFromAccount().equals(sd.getOldCommon()))
+                t.setFromAccount(this);
+            if (t.getToAccount().equals(sd.getOldCommon()))
+                t.setToAccount(this);
+        }
+        setAmountFromTransactionsAndTransfers(sd.getTransactionsList(), sd.getFilterTransfers());
     }
 }

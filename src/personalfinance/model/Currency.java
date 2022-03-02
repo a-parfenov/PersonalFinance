@@ -1,6 +1,7 @@
 package personalfinance.model;
 
 import personalfinance.exception.ModelException;
+import personalfinance.saveload.SaveData;
 
 import java.util.Objects;
 
@@ -9,7 +10,7 @@ public class Currency extends Common {
     private String code;
     private double rate;
     private boolean On;
-    private boolean Base;
+    private boolean base;
 
     public Currency() {}
 
@@ -30,7 +31,7 @@ public class Currency extends Common {
     }
 
     public void setBase(boolean base) {
-        this.Base = base;
+        this.base = base;
     }
 
     public String getTitle() {
@@ -50,7 +51,7 @@ public class Currency extends Common {
     }
 
     public boolean isBase() {
-        return Base;
+        return base;
     }
 
     @Override
@@ -60,7 +61,7 @@ public class Currency extends Common {
                 ", code='" + code + '\'' +
                 ", rate=" + rate +
                 ", isOn=" + On +
-                ", isBase=" + Base +
+                ", isBase=" + base +
                 '}';
     }
 
@@ -90,7 +91,7 @@ public class Currency extends Common {
         this.title = title;
         this.code = code;
         this.rate = rate;
-        this.Base = isBase;
+        this.base = isBase;
         this.On = isOn;
     }
 
@@ -102,4 +103,33 @@ public class Currency extends Common {
     public double getRateByCurrency(Currency currency) {
         return rate / currency.rate;
     }
+
+    @Override
+    public void postAdd(SaveData sd) {
+        clearBase(sd);
+    }
+
+    @Override
+    public void postEdit(SaveData sd) {
+        clearBase(sd);
+        for (Account a : sd.getAccountList()) {
+            if (a.getCurrency().equals(sd.getOldCommon()))
+                a.setCurrency(this);
+        }
+    }
+
+    private void clearBase(SaveData sd) {
+        if (base) {
+            rate = 1;
+            Currency old = (Currency) sd.getOldCommon();
+            for (Currency c : sd.getCurrencyList()) {
+                if (!this.equals(c)) {
+                    c.setBase(false);
+                    if (old != null)
+                        c.setRate(c.rate / old.rate);
+                }
+            }
+        }
+    }
+
 }
