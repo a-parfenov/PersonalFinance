@@ -14,10 +14,12 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class PersonalFinance {
-    public static void main(String[] args) throws ModelException {
+    public static void main(String[] args) throws Exception {
         init();
         SaveData sd = new SaveData().getInstance();
-        System.out.println(sd);
+        sd.updateCurrencies();
+        sd.save();
+        System.out.println(sd.getCurrencyList());
     }
 
     private static void testModel() throws ModelException {

@@ -5,6 +5,7 @@ import personalfinance.model.*;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
 
 public class SaveData {
@@ -181,6 +182,14 @@ public class SaveData {
         newC.postEdit(this);
         sort();
         saved = false;
+    }
+
+    public void updateCurrencies() throws Exception {
+        HashMap<String, Double> rates = RateCurrency.getRates(getBaseCurrency());
+        for (Currency c : currencyList)
+            c.setRate(rates.get(c.getCode()));
+        for (Account a : accountList)
+            a.getCurrency().setRate(rates.get(a.getCurrency().getCode()));
     }
 
     public void remove(Common c) {
