@@ -20,7 +20,7 @@ public class SaveData {
     private Common oldCommon;
     private boolean saved = true;
 
-    private SaveData() {
+    public SaveData() {
         load();
         this.filter = new Filter();
     }

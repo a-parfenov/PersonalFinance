@@ -116,4 +116,14 @@ public class Account extends Common{
         }
         setAmountFromTransactionsAndTransfers(sd.getTransactionsList(), sd.getFilterTransfers());
     }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "title='" + title + '\'' +
+                ", currency=" + currency +
+                ", startAmount=" + startAmount +
+                ", amount=" + amount +
+                '}';
+    }
 }
