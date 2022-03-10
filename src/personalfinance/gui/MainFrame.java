@@ -6,8 +6,7 @@ import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 import javax.swing.WindowConstants;
 
-import personalfinance.gui.dialog.AboutDialog;
-import personalfinance.gui.dialog.ErrorDialog;
+import personalfinance.gui.dialog.*;
 import personalfinance.gui.menu.MainMenu;
 import personalfinance.gui.toolbar.MainToolBar;
 import personalfinance.settings.Style;
@@ -17,14 +16,12 @@ public final class MainFrame extends JFrame implements Refresh {
     
     private final GridBagConstraints constraints;
     private final MainMenu mb;
-   // private final LeftPanel leftPanel;
-   // private RightPanel rightPanel;
     private final MainToolBar tb;
     
     public MainFrame() {
         super(Text.get("PROGRAM_NAME"));
 
-        new AboutDialog().setVisible(true);
+        new CurrencyAddEditDialog(this).showDialog();
         
         setResizable(false);
         setIconImage(Style.ICON_MAIN.getImage());
