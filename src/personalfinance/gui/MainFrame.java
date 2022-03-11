@@ -8,6 +8,7 @@ import javax.swing.WindowConstants;
 
 import personalfinance.gui.dialog.*;
 import personalfinance.gui.menu.MainMenu;
+import personalfinance.gui.panel.*;
 import personalfinance.gui.toolbar.MainToolBar;
 import personalfinance.settings.Style;
 import personalfinance.settings.Text;
@@ -16,12 +17,14 @@ public final class MainFrame extends JFrame implements Refresh {
     
     private final GridBagConstraints constraints;
     private final MainMenu mb;
+    private final LeftPanel leftPanel;
+    private RightPanel rightPanel;
     private final MainToolBar tb;
     
     public MainFrame() {
         super(Text.get("PROGRAM_NAME"));
 
-        new CurrencyAddEditDialog(this).showDialog();
+        //new CurrencyAddEditDialog(this).showDialog();
         
         setResizable(false);
         setIconImage(Style.ICON_MAIN.getImage());
@@ -41,7 +44,7 @@ public final class MainFrame extends JFrame implements Refresh {
         constraints.gridx = 0;
         constraints.gridy = 0;
         constraints.gridwidth = 2;
-        
+
         tb = new MainToolBar();
         add(tb, constraints);
         
@@ -49,7 +52,10 @@ public final class MainFrame extends JFrame implements Refresh {
         constraints.gridwidth = 1;
         constraints.anchor = GridBagConstraints.NORTH;
 
-        
+        leftPanel = new LeftPanel(this);
+        add(leftPanel, constraints);
+
+        setRightPanel(new OverviewPanel(this));
         pack();
         setLocationRelativeTo(null);
 
@@ -58,6 +64,8 @@ public final class MainFrame extends JFrame implements Refresh {
     @Override
     public void refresh() {
         SwingUtilities.updateComponentTreeUI(this);
+        mb.refresh();
+        leftPanel.refresh();
         pack();
     }
 
@@ -65,5 +73,15 @@ public final class MainFrame extends JFrame implements Refresh {
         return mb;
     }
 
+    public void setRightPanel(RightPanel panel) {
+        if (rightPanel != null)
+            remove(rightPanel);
+        constraints.gridx = 1;
+        constraints.gridy = 1;
+        rightPanel = panel;
+        panel.setBorder(Style.BORDER_PANEL);
+        add(rightPanel, constraints);
+        pack();
+    }
 
 }

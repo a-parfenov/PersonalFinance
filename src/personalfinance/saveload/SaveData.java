@@ -28,6 +28,9 @@ public class SaveData {
     public void load() {
         SaveLoad.load(this);
         sort();
+        for (Account a : accountList) {
+            a.setAmountFromTransactionsAndTransfers(transactionsList, transferList);
+        }
     }
 
     private void sort() {
