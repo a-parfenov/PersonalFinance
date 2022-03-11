@@ -14,7 +14,7 @@ abstract public class MainTableModel extends AbstractTableModel implements Refre
     protected List<? extends Common> data;
     protected List<String> columns = new ArrayList<>();
 
-    public MainTableModel(List data, String[] collums) {
+    public MainTableModel(List data, String[] columns) {
         this.data = data;
         this.columns = new ArrayList(Arrays.asList(columns));
     }
