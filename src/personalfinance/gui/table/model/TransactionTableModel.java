@@ -26,8 +26,10 @@ public class TransactionTableModel extends MainTableModel {
 
     @Override
     protected void updateData() {
-        if (count == -1) data = SaveData.getInstance().getFilterTransactions();
-        else data = SaveData.getInstance().getTransactionsOnCount(count);
+        if (count == -1)
+            data = SaveData.getInstance().getFilterTransactions();
+        else
+            data = SaveData.getInstance().getTransactionsOnCount(count);
     }
 
     @Override

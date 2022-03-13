@@ -201,6 +201,26 @@ public class SaveData {
         saved = false;
     }
 
+    public List<Article> getArticles() {
+        return articleList;
+    }
+
+    public List<Currency> getCurrencies() {
+        return currencyList;
+    }
+
+    public List<Account> getAccounts() {
+        return accountList;
+    }
+
+    public List<Transactions> getTransactions() {
+        return transactionsList;
+    }
+
+    public List<Transfer> getTransfers() {
+        return transferList;
+    }
+
     @Override
     public String toString() {
         return "SaveData{" +

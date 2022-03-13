@@ -15,11 +15,12 @@ public class Filter {
     private Date to;
 
     public Filter() {
-        this.step = STEP_MONTH;
+        this(STEP_MONTH);
     }
 
     public Filter(int step) {
         this.step = step;
+        setFromTo(new GregorianCalendar());
     }
 
     public int getStep() {

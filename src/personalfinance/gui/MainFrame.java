@@ -10,6 +10,7 @@ import personalfinance.gui.dialog.*;
 import personalfinance.gui.menu.MainMenu;
 import personalfinance.gui.panel.*;
 import personalfinance.gui.toolbar.MainToolBar;
+import personalfinance.model.Article;
 import personalfinance.settings.Style;
 import personalfinance.settings.Text;
 
@@ -55,7 +56,7 @@ public final class MainFrame extends JFrame implements Refresh {
         leftPanel = new LeftPanel(this);
         add(leftPanel, constraints);
 
-        setRightPanel(new OverviewPanel(this));
+        setRightPanel(new CurrencyPanel(this));
         pack();
         setLocationRelativeTo(null);
 
@@ -66,6 +67,7 @@ public final class MainFrame extends JFrame implements Refresh {
         SwingUtilities.updateComponentTreeUI(this);
         mb.refresh();
         leftPanel.refresh();
+        rightPanel.refresh();
         pack();
     }
 
