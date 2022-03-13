@@ -65,6 +65,10 @@ abstract public class RightPanel extends AbstractPanel{
         }
     }
 
+    protected void setPanels(JPanel[] panels) {
+        this.panels = panels;
+    }
+
     @Override
     protected final void init() {
         enableEditDelete();

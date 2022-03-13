@@ -5,12 +5,9 @@ import java.awt.GridBagLayout;
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 import javax.swing.WindowConstants;
-
-import personalfinance.gui.dialog.*;
 import personalfinance.gui.menu.MainMenu;
 import personalfinance.gui.panel.*;
 import personalfinance.gui.toolbar.MainToolBar;
-import personalfinance.model.Article;
 import personalfinance.settings.Style;
 import personalfinance.settings.Text;
 
@@ -56,7 +53,7 @@ public final class MainFrame extends JFrame implements Refresh {
         leftPanel = new LeftPanel(this);
         add(leftPanel, constraints);
 
-        setRightPanel(new CurrencyPanel(this));
+        setRightPanel(new StatisticsPanel(this));
         pack();
         setLocationRelativeTo(null);
 

@@ -50,11 +50,11 @@ public class Statistics {
         return (double) Math.round(value * 100) / 100;
     }
 
-    public static HashMap<String, Double> getDataForChartOnArticlesIncome() {
+    public static HashMap<String, Double> getDataForChartOnIncomeArticles() {
         return getDataForChartOnArticles(true);
     }
 
-    public static HashMap<String, Double> getDataForChartOnArticlesExp() {
+    public static HashMap<String, Double> getDataForChartOnExpArticles() {
         return getDataForChartOnArticles(false);
     }
 }
