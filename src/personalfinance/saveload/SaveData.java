@@ -94,23 +94,28 @@ public class SaveData {
     }
 
     public void setArticleList(List<Article> articleList) {
-        this.articleList = articleList;
+        if (articleList != null)
+            this.articleList = articleList;
     }
 
     public void setCurrencyList(List<Currency> currencyList) {
-        this.currencyList = currencyList;
+        if (currencyList != null)
+            this.currencyList = currencyList;
     }
 
     public void setAccountList(List<Account> accountList) {
-        this.accountList = accountList;
+        if (accountList != null)
+            this.accountList = accountList;
     }
 
     public void setTransactionsList(List<Transactions> transactionsList) {
-        this.transactionsList = transactionsList;
+        if (transactionsList != null)
+            this.transactionsList = transactionsList;
     }
 
     public void setTransferList(List<Transfer> transferList) {
-        this.transferList = transferList;
+        if (transferList != null)
+            this.transferList = transferList;
     }
 
     public Currency getBaseCurrency() {
@@ -230,5 +235,13 @@ public class SaveData {
                 ", transactionsList=" + transactionsList +
                 ", transferList=" + transferList +
                 '}';
+    }
+
+    public void clear() {
+        articleList.clear();
+        currencyList.clear();
+        accountList.clear();
+        transferList.clear();
+        transactionsList.clear();
     }
 }

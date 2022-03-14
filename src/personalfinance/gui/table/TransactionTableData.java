@@ -1,5 +1,6 @@
 package personalfinance.gui.table;
 
+import personalfinance.gui.handler.FunctionsHandler;
 import personalfinance.gui.table.model.TransactionTableModel;
 import personalfinance.gui.table.renderer.MainTableCellRenderer;
 import personalfinance.settings.Text;
@@ -16,13 +17,13 @@ public class TransactionTableData extends TableData {
     private static final String[] columns = new String[]{"DATE", "ACCOUNT", "ARTICLE", "AMOUNT", "NOTICE"};
     private static final ImageIcon[] icons = new ImageIcon[]{Style.ICON_DATE, Style.ICON_ACCOUNT, Style.ICON_ARTICLE, Style.ICON_AMOUNT, Style.ICON_NOTICE};
 
-    public TransactionTableData() {
-        super(new TransactionTableModel(columns), columns, icons);
+    public TransactionTableData(FunctionsHandler handler) {
+        super(new TransactionTableModel(columns), handler, columns, icons);
         init();
     }
 
-    public TransactionTableData(int count) {
-        super(new TransactionTableModel(columns, count), columns, icons);
+    public TransactionTableData(FunctionsHandler handler, int count) {
+        super(new TransactionTableModel(columns, count), handler, columns, icons);
         init();
     }
 

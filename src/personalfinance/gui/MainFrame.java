@@ -5,6 +5,8 @@ import java.awt.GridBagLayout;
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 import javax.swing.WindowConstants;
+
+import personalfinance.gui.handler.MainToolBarHandler;
 import personalfinance.gui.menu.MainMenu;
 import personalfinance.gui.panel.*;
 import personalfinance.gui.toolbar.MainToolBar;
@@ -21,8 +23,6 @@ public final class MainFrame extends JFrame implements Refresh {
     
     public MainFrame() {
         super(Text.get("PROGRAM_NAME"));
-
-        //new CurrencyAddEditDialog(this).showDialog();
         
         setResizable(false);
         setIconImage(Style.ICON_MAIN.getImage());
@@ -43,7 +43,7 @@ public final class MainFrame extends JFrame implements Refresh {
         constraints.gridy = 0;
         constraints.gridwidth = 2;
 
-        tb = new MainToolBar();
+        tb = new MainToolBar(new MainToolBarHandler(this));
         add(tb, constraints);
         
         constraints.gridy = 1;
@@ -53,7 +53,7 @@ public final class MainFrame extends JFrame implements Refresh {
         leftPanel = new LeftPanel(this);
         add(leftPanel, constraints);
 
-        setRightPanel(new StatisticsPanel(this));
+        setRightPanel(new OverviewPanel(this));
         pack();
         setLocationRelativeTo(null);
 
@@ -82,5 +82,7 @@ public final class MainFrame extends JFrame implements Refresh {
         add(rightPanel, constraints);
         pack();
     }
-
+    public RightPanel getRightPanel() {
+        return rightPanel;
+    }
 }

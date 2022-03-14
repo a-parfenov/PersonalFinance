@@ -2,6 +2,7 @@ package personalfinance.gui.toolbar;
 
 import personalfinance.gui.EnableEditDelete;
 import personalfinance.gui.MainButton;
+import personalfinance.gui.handler.Handler;
 import personalfinance.settings.HandlerCode;
 import personalfinance.settings.Style;
 import personalfinance.settings.Text;
@@ -11,8 +12,8 @@ public final class FunctionsToolBar extends AbstractToolBar implements EnableEdi
     private MainButton editButton;
     private MainButton deleteButton;
 
-    public FunctionsToolBar() {
-        super(Style.BORDER_FUNCTIONS_TOOLBAR);
+    public FunctionsToolBar(Handler handler) {
+        super(Style.BORDER_FUNCTIONS_TOOLBAR, handler);
         init();
     }
 
