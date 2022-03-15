@@ -21,5 +21,4 @@ public final class StatisticsTypePanel extends AbstractPanel {
         MainButton type = new MainButton(title, new ChartHandler(frame), HandlerCode.TYPE);
         add(type);
     }
-
 }

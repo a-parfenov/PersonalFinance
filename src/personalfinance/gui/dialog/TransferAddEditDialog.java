@@ -1,20 +1,19 @@
 package personalfinance.gui.dialog;
 
-import personalfinance.gui.MainDatePicker;
-import personalfinance.gui.MainFrame;
-import personalfinance.saveload.SaveData;
-
 import java.util.Date;
 import javax.swing.JTextField;
 import org.jdatepicker.impl.JDatePickerImpl;
 import personalfinance.exception.ModelException;
+import personalfinance.gui.MainDatePicker;
+import personalfinance.gui.MainFrame;
 import personalfinance.model.Account;
 import personalfinance.model.Common;
 import personalfinance.model.Transfer;
+import personalfinance.saveload.SaveData;
 import personalfinance.settings.Format;
 import personalfinance.settings.Style;
 
-public class TransferAddEditDialog extends AccountAddEditDialog {
+public class TransferAddEditDialog extends AddEditDialog {
 
     public TransferAddEditDialog(MainFrame frame) {
         super(frame);
@@ -23,19 +22,19 @@ public class TransferAddEditDialog extends AccountAddEditDialog {
     @Override
     protected void init() {
         components.put("LABEL_DATE", new MainDatePicker().getDatePicker());
-        components.put("LABEL_FROM_ACCOUNT", new CommonComboBox(SaveData.getInstance().getAccountList().toArray()));
-        components.put("LABEL_TO_ACCOUNT", new CommonComboBox(SaveData.getInstance().getAccountList().toArray()));
+        components.put("LABEL_FROM_ACCOUNT", new CommonComboBox(SaveData.getInstance().getAccounts().toArray()));
+        components.put("LABEL_TO_ACCOUNT", new CommonComboBox(SaveData.getInstance().getAccounts().toArray()));
         components.put("LABEL_FROM_AMOUNT", new JTextField());
         components.put("LABEL_TO_AMOUNT", new JTextField());
         components.put("LABEL_NOTICE", new JTextField());
-
+        
         icons.put("LABEL_DATE", Style.ICON_DATE);
         icons.put("LABEL_FROM_ACCOUNT", Style.ICON_ACCOUNT);
         icons.put("LABEL_TO_ACCOUNT", Style.ICON_ACCOUNT);
         icons.put("LABEL_FROM_AMOUNT", Style.ICON_AMOUNT);
         icons.put("LABEL_TO_AMOUNT", Style.ICON_AMOUNT);
         icons.put("LABEL_NOTICE", Style.ICON_NOTICE);
-
+        
         values.put("LABEL_DATE", new Date());
         values.put("LABEL_FROM_AMOUNT", Format.amount(0));
         values.put("LABEL_TO_AMOUNT", Format.amount(0));
@@ -66,4 +65,5 @@ public class TransferAddEditDialog extends AccountAddEditDialog {
             throw new ModelException(ModelException.AMOUNT_FORMAT);
         }
     }
+    
 }

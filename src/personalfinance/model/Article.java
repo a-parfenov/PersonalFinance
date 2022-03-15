@@ -1,18 +1,17 @@
 package personalfinance.model;
 
+import java.util.Objects;
 import personalfinance.exception.ModelException;
 import personalfinance.saveload.SaveData;
 
-import java.util.Objects;
-
-public class Article extends Common{
+public class Article extends Common {
+    
     private String title;
-
-    public Article() {} // конструктор
-
+    
+    public Article() {}
+    
     public Article(String title) throws ModelException {
-        if (title.length() == 0)
-            throw new ModelException(ModelException.TITLE_EMPTY);
+        if (title.length() == 0) throw new ModelException(ModelException.TITLE_EMPTY);
         this.title = title;
     }
 
@@ -26,18 +25,7 @@ public class Article extends Common{
 
     @Override
     public String toString() {
-        return "Article{" +
-                "title='" + title + '\'' + '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o)
-            return true;
-        if (o == null || getClass() != o.getClass())
-            return false;
-        Article article = (Article) o;
-        return title.equals(article.title);
+        return "Article{" + "title=" + title + '}';
     }
 
     @Override
@@ -48,13 +36,32 @@ public class Article extends Common{
     }
 
     @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Article other = (Article) obj;
+        if (!Objects.equals(this.title, other.title)) {
+            return false;
+        }
+        return true;
+    }
+    
+    @Override
     public String getValueForComboBox() {
         return title;
     }
-
+    
     @Override
     public void postEdit(SaveData sd) {
-        for (Transactions t : sd.getTransactionsList())
+        for (Transaction t : sd.getTransactions())
             if (t.getArticle().equals(sd.getOldCommon())) t.setArticle(this);
     }
+    
 }

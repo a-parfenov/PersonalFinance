@@ -4,14 +4,15 @@ import personalfinance.model.Account;
 import personalfinance.saveload.SaveData;
 import personalfinance.settings.Format;
 
-public class AccountTableModel extends MainTableModel{
+public class AccountTableModel extends MainTableModel {
+    
     private static final int TITLE = 0;
     private static final int AMOUNT = 1;
-
+    
     public AccountTableModel(String[] columns) {
         super(SaveData.getInstance().getAccounts(), columns);
     }
-
+    
     @Override
     protected void updateData() {
         data = SaveData.getInstance().getAccounts();
@@ -19,8 +20,7 @@ public class AccountTableModel extends MainTableModel{
 
     @Override
     public Object getValueAt(int row, int column) {
-        if (data.isEmpty())
-            return null;
+        if (data.isEmpty()) return null;
         Account account = (Account) data.get(row);
         switch (column) {
             case TITLE:

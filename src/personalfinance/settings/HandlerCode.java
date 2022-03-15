@@ -1,7 +1,7 @@
 package personalfinance.settings;
 
 final public class HandlerCode {
-
+    
     public static final String MENU_FILE_NEW = "MENU_FILE_NEW";
     public static final String MENU_FILE_OPEN = "MENU_FILE_OPEN";
     public static final String MENU_FILE_SAVE = "MENU_FILE_SAVE";
@@ -20,7 +20,7 @@ final public class HandlerCode {
     public static final String MENU_SETTINGS_LANGUAGE_RUSSIAN = "MENU_SETTINGS_LANGUAGE_RUSSIAN";
     public static final String MENU_SETTINGS_LANGUAGE_ENGLISH = "MENU_SETTINGS_LANGUAGE_ENGLISH";
     public static final String MENU_HELP_ABOUT = "MENU_HELP_ABOUT";
-
+    
     public static final String TOOLBAR_OVERVIEW = "TOOLBAR_OVERVIEW";
     public static final String TOOLBAR_ACCOUNTS = "TOOLBAR_ACCOUNTS";
     public static final String TOOLBAR_ARTICLES = "TOOLBAR_ARTICLES";
@@ -28,7 +28,7 @@ final public class HandlerCode {
     public static final String TOOLBAR_TRANSFERS = "TOOLBAR_TRANSFERS";
     public static final String TOOLBAR_CURRENCIES = "TOOLBAR_CURRENCIES";
     public static final String TOOLBAR_STATISTICS = "TOOLBAR_STATISTICS";
-
+    
     public static final String ADD = "ADD";
     public static final String EDIT = "EDIT";
     public static final String DELETE = "DELETE";
@@ -37,5 +37,5 @@ final public class HandlerCode {
     public static final String RIGHT = "RIGHT";
     public static final String STEP = "STEP";
     public static final String TYPE = "TYPE";
-
+    
 }

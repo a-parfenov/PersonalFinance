@@ -15,7 +15,7 @@ import personalfinance.settings.Settings;
 public class MenuFileHandler extends Handler {
 
     private final MainFileChooser fc;
-
+    
     public MenuFileHandler(MainFrame frame) {
         super(frame);
         fc = new MainFileChooser(frame);
@@ -66,8 +66,9 @@ public class MenuFileHandler extends Handler {
                     if (result == JOptionPane.YES_OPTION) System.exit(0);
                 }
             }
-
+            
         }
         super.actionPerformed(ae);
     }
+    
 }

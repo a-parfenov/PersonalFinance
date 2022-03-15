@@ -1,13 +1,12 @@
 package personalfinance.gui.handler;
 
+import java.awt.event.ActionEvent;
 import personalfinance.gui.MainFrame;
 import personalfinance.saveload.SaveData;
 import personalfinance.settings.HandlerCode;
 
-import java.awt.event.ActionEvent;
-
-public class FilterHandler extends Handler{
-
+public class FilterHandler extends Handler {
+    
     public FilterHandler(MainFrame frame) {
         super(frame);
     }
@@ -29,4 +28,5 @@ public class FilterHandler extends Handler{
         }
         super.actionPerformed(ae);
     }
+    
 }

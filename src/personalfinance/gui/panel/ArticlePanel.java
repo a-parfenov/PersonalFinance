@@ -8,7 +8,7 @@ import personalfinance.gui.toolbar.FunctionsToolBar;
 import personalfinance.settings.Style;
 
 public class ArticlePanel extends RightPanel {
-
+    
     public ArticlePanel(MainFrame frame) {
         super(frame, new ArticleTableData(new FunctionsHandler(frame, new ArticleAddEditDialog(frame))),
                 "ARTICLES", Style.ICON_PANEL_ARTICLES,

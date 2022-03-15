@@ -5,7 +5,7 @@ import personalfinance.gui.MainFrame;
 import personalfinance.settings.HandlerCode;
 
 public class MainToolBarHandler extends MenuViewHandler {
-
+    
     public MainToolBarHandler(MainFrame frame) {
         super(frame);
     }
@@ -40,8 +40,9 @@ public class MainToolBarHandler extends MenuViewHandler {
             case HandlerCode.TOOLBAR_STATISTICS: {
                 showStatisticsPanel();
             }
-
+            
         }
         super.actionPerformed(ae);
     }
+    
 }

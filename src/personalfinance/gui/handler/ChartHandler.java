@@ -20,5 +20,4 @@ public class ChartHandler extends Handler {
         }
         super.actionPerformed(ae);
     }
-
 }

@@ -1,5 +1,13 @@
 package personalfinance;
 
+import java.awt.Font;
+import java.awt.FontFormatException;
+import java.awt.GraphicsEnvironment;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import personalfinance.exception.ModelException;
 import personalfinance.gui.MainFrame;
 import personalfinance.model.*;
@@ -7,21 +15,23 @@ import personalfinance.saveload.SaveData;
 import personalfinance.settings.Settings;
 import personalfinance.settings.Text;
 
-import java.awt.*;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 public class PersonalFinance {
+
     public static void main(String[] args) throws Exception {
         init();
-        SaveData sd = SaveData.getInstance();
         MainFrame frame = new MainFrame();
         frame.setVisible(true);
-
-        System.out.println(sd.getCurrencyList());
+    }
+    
+    private static void init() {
+        try {
+            Settings.init();
+            Text.init();
+            GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+            ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, Settings.FONT_ROBOTO_LIGHT));
+        } catch (FontFormatException | IOException ex) {
+            Logger.getLogger(PersonalFinance.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     private static void testModel() throws ModelException {
@@ -58,13 +68,13 @@ public class PersonalFinance {
         articleArrayList.add(article3);
         articleArrayList.add(article4);
 
-        ArrayList<Transactions> transactionsArrayList = new ArrayList<>();
-        transactionsArrayList.add(new Transactions(ac2, article3, 30000));
-        transactionsArrayList.add(new Transactions(ac2, article1, -1500, "Запасы"));
-        transactionsArrayList.add(new Transactions(ac1, article2, -3500, "Бензин"));
-        transactionsArrayList.add(new Transactions(ac1, article2, 10750, "Билет на самолет"));
-        transactionsArrayList.add(new Transactions(ac3, article4, 40000));
-        transactionsArrayList.add(new Transactions(ac2, article3, 2500, new Date(new Date().getTime() - (long) 86400000 * 30)));
+        ArrayList<Transaction> transactionsArrayList = new ArrayList<>();
+        transactionsArrayList.add(new Transaction(ac2, article3, 30000));
+        transactionsArrayList.add(new Transaction(ac2, article1, -1500, "Запасы"));
+        transactionsArrayList.add(new Transaction(ac1, article2, -3500, "Бензин"));
+        transactionsArrayList.add(new Transaction(ac1, article2, 10750, "Билет на самолет"));
+        transactionsArrayList.add(new Transaction(ac3, article4, 40000));
+        transactionsArrayList.add(new Transaction(ac2, article3, 2500, new Date(new Date().getTime() - (long) 86400000 * 30)));
 
         for (int i = 0; i < 50; i++) {
             Article tempArticle;
@@ -79,7 +89,7 @@ public class PersonalFinance {
                 tempAccount = ac2;
             double tempAmount = Math.round(Math.random() * (-1000));
             Date tempDate = new Date((long) (new Date().getTime() - (long) 86400000 * 30 * Math.random()));
-            transactionsArrayList.add(new Transactions(tempAccount, tempArticle, tempAmount, tempDate));
+            transactionsArrayList.add(new Transaction(tempAccount, tempArticle, tempAmount, tempDate));
         }
         ArrayList<Transfer> transferArrayList = new ArrayList<>();
         transferArrayList.add(new Transfer(ac2, ac1, 25000, 25000));
@@ -91,24 +101,13 @@ public class PersonalFinance {
         }
 
         SaveData sd = new SaveData().getInstance();
-        sd.setArticleList(articleArrayList);
-        sd.setCurrencyList(currencyArrayList);
-        sd.setTransactionsList(transactionsArrayList);
-        sd.setTransferList(transferArrayList);
-        sd.setAccountList(accountArrayList);
+        sd.setArticles(articleArrayList);
+        sd.setCurrencies(currencyArrayList);
+        sd.setTransactions(transactionsArrayList);
+        sd.setTransfers(transferArrayList);
+        sd.setAccounts(accountArrayList);
         sd.save();
 
     }
-
-    private static void init() {
-        try {
-            Text.init();
-            GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-            ge.registerFont(Font.createFont(Font.TRUETYPE_FONT, Settings.FONT_ROBOTO_LIGHT));
-        } catch (FontFormatException | IOException e) {
-            Logger.getLogger(PersonalFinance.class.getName()).log(Level.SEVERE, null, e);
-        }
-    }
-
-
+    
 }

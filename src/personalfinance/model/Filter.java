@@ -6,23 +6,24 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 public class Filter {
+    
     public static final int STEP_DAY = 0;
     public static final int STEP_MONTH = 1;
     public static final int STEP_YEAR = 2;
-
+    
     private int step;
     private Date from;
     private Date to;
-
+    
     public Filter() {
         this(STEP_MONTH);
     }
-
+    
     public Filter(int step) {
         this.step = step;
         setFromTo(new GregorianCalendar());
     }
-
+    
     public int getStep() {
         return step;
     }
@@ -31,38 +32,28 @@ public class Filter {
         return from;
     }
 
-    public void setFrom(Date from) {
-        this.from = from;
-    }
-
     public Date getTo() {
         return to;
     }
-
-    public void setTo(Date to) {
-        this.to = to;
-        setFromTo(new GregorianCalendar());
-    }
-
+    
     public void next() {
         offset(1);
     }
-
+    
     public void prev() {
         offset(-1);
     }
-
+    
     public void nextPeriod() {
         step += 1;
-        if (step > STEP_YEAR)
-            step = STEP_DAY;
+        if (step > STEP_YEAR) step = STEP_DAY;
         setFromTo(new GregorianCalendar());
     }
-
+    
     public boolean check(Date date) {
         return (date.compareTo(from) > 0) && (date.compareTo(to) < 0);
     }
-
+    
     private void setFromTo(Calendar calendar) {
         switch (step) {
             case STEP_DAY:
@@ -99,13 +90,12 @@ public class Filter {
                 this.to = new GregorianCalendar(
                         calendar.get(Calendar.YEAR),
                         11,
-                        1,
+                        31,
                         23, 59, 59).getTime();
         }
     }
-
+    
     private void offset(int i) {
-
         Calendar calendar = Calendar.getInstance();
         calendar.setTime(from);
         switch (step) {

@@ -1,16 +1,17 @@
 package personalfinance.gui.dialog;
 
+import java.awt.Desktop;
+import java.io.IOException;
+import java.net.URISyntaxException;
+import javax.swing.JDialog;
+import javax.swing.JEditorPane;
+import javax.swing.event.HyperlinkEvent;
+import javax.swing.event.HyperlinkListener;
 import personalfinance.settings.Style;
 import personalfinance.settings.Text;
 
-import javax.swing.*;
-import javax.swing.event.HyperlinkEvent;
-import javax.swing.event.HyperlinkListener;
-import java.awt.*;
-import java.io.IOException;
-import java.net.URISyntaxException;
-
 public class AboutDialog extends JDialog {
+    
     public AboutDialog() {
         super();
         init();
@@ -23,7 +24,7 @@ public class AboutDialog extends JDialog {
         JEditorPane pane = new JEditorPane("text/html", Text.get("ABOUT"));
         pane.setEditable(false);
         pane.setOpaque(false);
-
+        
         pane.addHyperlinkListener(new HyperlinkListener() {
             @Override
             public void hyperlinkUpdate(HyperlinkEvent he) {
@@ -34,10 +35,9 @@ public class AboutDialog extends JDialog {
                 }
             }
         });
-
+        
         add(pane);
         pack();
         setLocationRelativeTo(null);
     }
-
 }

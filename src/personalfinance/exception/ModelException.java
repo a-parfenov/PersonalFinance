@@ -1,6 +1,7 @@
 package personalfinance.exception;
 
-public class ModelException extends Exception{
+public class ModelException extends Exception {
+    
     public static final int TITLE_EMPTY = 1;
     public static final int IS_EXISTS = 2;
     public static final int DATE_FORMAT = 3;
@@ -11,14 +12,15 @@ public class ModelException extends Exception{
     public static final int RATE_INCORRECT = 8;
     public static final int AMOUNT_FORMAT = 9;
     public static final int NO_BASE_CURRENCY = 10;
-
+    
     private final int code;
-
+    
     public ModelException(int code) {
         this.code = code;
     }
-
-    public String getMessage(){
+    
+    @Override
+    public String getMessage() {
         switch (code) {
             case TITLE_EMPTY:
                 return "ERROR_TITLE_EMPTY";

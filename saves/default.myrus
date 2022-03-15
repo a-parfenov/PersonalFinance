@@ -8,82 +8,175 @@
             <rate>1.0</rate>
             <title>Рубль</title>
         </currency>
-        <startAmount>1000.0</startAmount>
-        <title>Кошелек</title>
-    </accounts>
-    <accounts>
-        <currency>
-            <base>true</base>
-            <code>RUB</code>
-            <on>true</on>
-            <rate>1.0</rate>
-            <title>Рубль</title>
-        </currency>
         <startAmount>0.0</startAmount>
-        <title>Карта VISA</title>
-    </accounts>
-    <accounts>
-        <currency>
-            <base>true</base>
-            <code>RUB</code>
-            <on>true</on>
-            <rate>1.0</rate>
-            <title>Рубль</title>
-        </currency>
-        <startAmount>100000.0</startAmount>
-        <title>Депозит 1</title>
+        <title>Ежедневный (Тинькофф)</title>
     </accounts>
     <accounts>
         <currency>
             <base>false</base>
             <code>USD</code>
             <on>true</on>
-            <rate>65.0</rate>
+            <rate>115.1963</rate>
             <title>Доллар</title>
         </currency>
+        <startAmount>4570.0</startAmount>
+        <title>Инвестиции</title>
+    </accounts>
+    <accounts>
+        <currency>
+            <base>true</base>
+            <code>RUB</code>
+            <on>true</on>
+            <rate>1.0</rate>
+            <title>Рубль</title>
+        </currency>
+        <startAmount>26843.0</startAmount>
+        <title>Наличные</title>
+    </accounts>
+    <accounts>
+        <currency>
+            <base>true</base>
+            <code>RUB</code>
+            <on>true</on>
+            <rate>1.0</rate>
+            <title>Рубль</title>
+        </currency>
+        <startAmount>45000.0</startAmount>
+        <title>Райффайзен</title>
+    </accounts>
+    <accounts>
+        <currency>
+            <base>true</base>
+            <code>RUB</code>
+            <on>true</on>
+            <rate>1.0</rate>
+            <title>Рубль</title>
+        </currency>
+        <startAmount>22750.0</startAmount>
+        <title>Сбер</title>
+    </accounts>
+    <accounts>
+        <currency>
+            <base>false</base>
+            <code>CNY</code>
+            <on>true</on>
+            <rate>18.2218</rate>
+            <title>Юань</title>
+        </currency>
         <startAmount>0.0</startAmount>
-        <title>Депозит 2</title>
+        <title>Сберегательный счет, CNY</title>
+    </accounts>
+    <accounts>
+        <currency>
+            <base>false</base>
+            <code>EUR</code>
+            <on>true</on>
+            <rate>127.2343</rate>
+            <title>Евро</title>
+        </currency>
+        <startAmount>2000.0</startAmount>
+        <title>Сберегательный счет, EUR</title>
+    </accounts>
+    <accounts>
+        <currency>
+            <base>false</base>
+            <code>USD</code>
+            <on>true</on>
+            <rate>115.1963</rate>
+            <title>Доллар</title>
+        </currency>
+        <startAmount>2700.0</startAmount>
+        <title>Сберегательный счет, USD</title>
+    </accounts>
+    <accounts>
+        <currency>
+            <base>true</base>
+            <code>RUB</code>
+            <on>true</on>
+            <rate>1.0</rate>
+            <title>Рубль</title>
+        </currency>
+        <startAmount>107000.0</startAmount>
+        <title>Тинькофф</title>
     </accounts>
     <articles>
-        <title>Продукты</title>
-    </articles>
-    <articles>
-        <title>Транспорт</title>
+        <title>Зарплата</title>
     </articles>
     <articles>
         <title>Здоровье</title>
     </articles>
     <articles>
-        <title>Зарплата</title>
+        <title>Инвестиции</title>
     </articles>
-    <currency>
+    <articles>
+        <title>Кафе</title>
+    </articles>
+    <articles>
+        <title>Квартира (аренда, ЖКХ)</title>
+    </articles>
+    <articles>
+        <title>Маленькие шалости</title>
+    </articles>
+    <articles>
+        <title>Подарки</title>
+    </articles>
+    <articles>
+        <title>Продукты</title>
+    </articles>
+    <articles>
+        <title>Развитие</title>
+    </articles>
+    <articles>
+        <title>Развлечения</title>
+    </articles>
+    <articles>
+        <title>Спорт</title>
+    </articles>
+    <articles>
+        <title>Транспорт</title>
+    </articles>
+    <currencies>
         <base>true</base>
         <code>RUB</code>
         <on>true</on>
         <rate>1.0</rate>
         <title>Рубль</title>
-    </currency>
-    <currency>
+    </currencies>
+    <currencies>
         <base>false</base>
         <code>USD</code>
         <on>true</on>
-        <rate>65.0</rate>
+        <rate>115.1963</rate>
         <title>Доллар</title>
-    </currency>
-    <currency>
+    </currencies>
+    <currencies>
         <base>false</base>
         <code>EUR</code>
-        <on>false</on>
-        <rate>75.0</rate>
+        <on>true</on>
+        <rate>127.2343</rate>
         <title>Евро</title>
-    </currency>
-    <currency>
+    </currencies>
+    <currencies>
+        <base>false</base>
+        <code>CNY</code>
+        <on>true</on>
+        <rate>18.2218</rate>
+        <title>Юань</title>
+    </currencies>
+    <currencies>
         <base>false</base>
         <code>UAH</code>
         <on>false</on>
-        <rate>2.5</rate>
+        <rate>3.8176</rate>
         <title>Гривна</title>
-    </currency>
+    </currencies>
+    <currencies>
+        <base>false</base>
+        <code>JPY</code>
+        <on>false</on>
+        <rate>0.9945</rate>
+        <title>Японская йена</title>
+    </currencies>
     <transactions>
         <account>
             <currency>
@@ -94,32 +187,13 @@
                 <title>Рубль</title>
             </currency>
             <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
-        </account>
-        <amount>30000.0</amount>
-        <article>
-            <title>Здоровье</title>
-        </article>
-        <date>2022-03-11T11:19:00.677+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
+            <title>Ежедневный (Тинькофф)</title>
         </account>
         <amount>-1500.0</amount>
         <article>
             <title>Продукты</title>
         </article>
-        <date>2022-03-11T11:19:00.677+03:00</date>
+        <date>2022-03-15T13:39:01.438+03:00</date>
         <notice>Запасы</notice>
     </transactions>
     <transactions>
@@ -131,15 +205,15 @@
                 <rate>1.0</rate>
                 <title>Рубль</title>
             </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелек</title>
+            <startAmount>107000.0</startAmount>
+            <title>Тинькофф</title>
         </account>
-        <amount>-3500.0</amount>
+        <amount>40000.0</amount>
         <article>
-            <title>Транспорт</title>
+            <title>Зарплата</title>
         </article>
-        <date>2022-03-11T11:19:00.677+03:00</date>
-        <notice>Бензин</notice>
+        <date>2022-03-15T13:39:01.438+03:00</date>
+        <notice></notice>
     </transactions>
     <transactions>
         <account>
@@ -150,14 +224,14 @@
                 <rate>1.0</rate>
                 <title>Рубль</title>
             </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелек</title>
+            <startAmount>45000.0</startAmount>
+            <title>Райффайзен</title>
         </account>
-        <amount>10750.0</amount>
+        <amount>-10750.0</amount>
         <article>
             <title>Транспорт</title>
         </article>
-        <date>2022-03-11T11:19:00.677+03:00</date>
+        <date>2022-03-15T12:00:00+03:00</date>
         <notice>Билет на самолет</notice>
     </transactions>
     <transactions>
@@ -169,14 +243,52 @@
                 <rate>1.0</rate>
                 <title>Рубль</title>
             </currency>
-            <startAmount>100000.0</startAmount>
-            <title>Депозит 1</title>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
         </account>
-        <amount>40000.0</amount>
+        <amount>-3500.0</amount>
         <article>
-            <title>Зарплата</title>
+            <title>Транспорт</title>
         </article>
-        <date>2022-03-11T11:19:00.677+03:00</date>
+        <date>2022-03-15T12:00:00+03:00</date>
+        <notice>Бензин</notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
+        </account>
+        <amount>-1741.0</amount>
+        <article>
+            <title>Кафе</title>
+        </article>
+        <date>2022-03-15T12:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>45000.0</startAmount>
+            <title>Райффайзен</title>
+        </account>
+        <amount>-193.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-03-15T02:43:26.204+03:00</date>
         <notice></notice>
     </transactions>
     <transactions>
@@ -189,13 +301,13 @@
                 <title>Рубль</title>
             </currency>
             <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
+            <title>Ежедневный (Тинькофф)</title>
         </account>
-        <amount>2500.0</amount>
+        <amount>-907.0</amount>
         <article>
-            <title>Здоровье</title>
+            <title>Развлечения</title>
         </article>
-        <date>2022-02-09T11:19:00.677+03:00</date>
+        <date>2022-03-14T00:00:00+03:00</date>
         <notice></notice>
     </transactions>
     <transactions>
@@ -207,52 +319,147 @@
                 <rate>1.0</rate>
                 <title>Рубль</title>
             </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелек</title>
+            <startAmount>45000.0</startAmount>
+            <title>Райффайзен</title>
+        </account>
+        <amount>-58.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-03-13T14:15:12.845+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>107000.0</startAmount>
+            <title>Тинькофф</title>
+        </account>
+        <amount>12459.0</amount>
+        <article>
+            <title>Инвестиции</title>
+        </article>
+        <date>2022-03-13T12:00:00+03:00</date>
+        <notice>Доход с облигаций</notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>45000.0</startAmount>
+            <title>Райффайзен</title>
+        </account>
+        <amount>-659.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-03-13T01:22:53.963+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>45000.0</startAmount>
+            <title>Райффайзен</title>
+        </account>
+        <amount>-391.0</amount>
+        <article>
+            <title>Транспорт</title>
+        </article>
+        <date>2022-03-12T12:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>45000.0</startAmount>
+            <title>Райффайзен</title>
+        </account>
+        <amount>-996.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-03-12T09:19:30.960+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>45000.0</startAmount>
+            <title>Райффайзен</title>
+        </account>
+        <amount>-96.0</amount>
+        <article>
+            <title>Зарплата</title>
+        </article>
+        <date>2022-03-11T14:25:54.293+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
+        </account>
+        <amount>-216.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-03-07T19:11:50.974+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>45000.0</startAmount>
+            <title>Райффайзен</title>
         </account>
         <amount>-320.0</amount>
         <article>
             <title>Зарплата</title>
         </article>
-        <date>2022-02-19T16:45:49.407+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелек</title>
-        </account>
-        <amount>-538.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-02-27T04:00:27.866+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелек</title>
-        </account>
-        <amount>-352.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-02-20T13:35:49.464+03:00</date>
+        <date>2022-03-07T13:01:26.748+03:00</date>
         <notice></notice>
     </transactions>
     <transactions>
@@ -265,13 +472,13 @@
                 <title>Рубль</title>
             </currency>
             <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
+            <title>Ежедневный (Тинькофф)</title>
         </account>
-        <amount>-754.0</amount>
+        <amount>-896.0</amount>
         <article>
             <title>Продукты</title>
         </article>
-        <date>2022-03-10T18:09:50.179+03:00</date>
+        <date>2022-03-07T04:32:22.181+03:00</date>
         <notice></notice>
     </transactions>
     <transactions>
@@ -284,32 +491,13 @@
                 <title>Рубль</title>
             </currency>
             <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
+            <title>Ежедневный (Тинькофф)</title>
         </account>
-        <amount>-692.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-03-07T12:40:47.011+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелек</title>
-        </account>
-        <amount>-397.0</amount>
+        <amount>-136.0</amount>
         <article>
             <title>Продукты</title>
         </article>
-        <date>2022-02-14T17:11:12.826+03:00</date>
+        <date>2022-03-07T00:00:00+03:00</date>
         <notice></notice>
     </transactions>
     <transactions>
@@ -322,127 +510,13 @@
                 <title>Рубль</title>
             </currency>
             <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
+            <title>Ежедневный (Тинькофф)</title>
         </account>
-        <amount>-890.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-03-04T04:07:54.924+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелек</title>
-        </account>
-        <amount>-67.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-03-02T14:02:13.296+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
-        </account>
-        <amount>-487.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-03-06T01:58:59.169+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелек</title>
-        </account>
-        <amount>-874.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-03-10T07:36:36.023+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
-        </account>
-        <amount>-399.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-03-10T07:04:31.550+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
-        </account>
-        <amount>-991.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-02-20T14:38:51.151+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелек</title>
-        </account>
-        <amount>-303.0</amount>
+        <amount>-537.0</amount>
         <article>
             <title>Продукты</title>
         </article>
-        <date>2022-02-18T22:20:27.948+03:00</date>
+        <date>2022-03-06T19:42:32.265+03:00</date>
         <notice></notice>
     </transactions>
     <transactions>
@@ -455,13 +529,32 @@
                 <title>Рубль</title>
             </currency>
             <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
+            <title>Ежедневный (Тинькофф)</title>
         </account>
-        <amount>-445.0</amount>
+        <amount>-2758.0</amount>
+        <article>
+            <title>Кафе</title>
+        </article>
+        <date>2022-03-06T12:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
+        </account>
+        <amount>-122.0</amount>
         <article>
             <title>Продукты</title>
         </article>
-        <date>2022-02-21T14:14:27.357+03:00</date>
+        <date>2022-03-06T07:55:21.107+03:00</date>
         <notice></notice>
     </transactions>
     <transactions>
@@ -473,33 +566,33 @@
                 <rate>1.0</rate>
                 <title>Рубль</title>
             </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелек</title>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
         </account>
-        <amount>-300.0</amount>
+        <amount>-503.0</amount>
+        <article>
+            <title>Развитие</title>
+        </article>
+        <date>2022-03-05T12:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
+        </account>
+        <amount>-342.0</amount>
         <article>
             <title>Продукты</title>
         </article>
-        <date>2022-03-09T23:53:29.250+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелек</title>
-        </account>
-        <amount>-29.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-02-26T02:21:53.299+03:00</date>
+        <date>2022-03-03T12:00:00+03:00</date>
         <notice></notice>
     </transactions>
     <transactions>
@@ -512,507 +605,32 @@
                 <title>Рубль</title>
             </currency>
             <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
-        </account>
-        <amount>-372.0</amount>
-        <article>
-            <title>Продукты</title>
-        </article>
-        <date>2022-02-26T19:21:17.544+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелек</title>
-        </account>
-        <amount>-495.0</amount>
-        <article>
-            <title>Продукты</title>
-        </article>
-        <date>2022-02-12T05:52:43.393+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелек</title>
-        </account>
-        <amount>-402.0</amount>
-        <article>
-            <title>Продукты</title>
-        </article>
-        <date>2022-02-24T00:54:04.803+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
-        </account>
-        <amount>-412.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-02-14T13:26:02.464+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
-        </account>
-        <amount>-781.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-02-28T20:23:27.570+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
-        </account>
-        <amount>-334.0</amount>
-        <article>
-            <title>Продукты</title>
-        </article>
-        <date>2022-02-27T08:43:24.332+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелек</title>
-        </account>
-        <amount>-866.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-03-02T02:05:02.967+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелек</title>
-        </account>
-        <amount>-178.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-02-20T15:30:39.495+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелек</title>
-        </account>
-        <amount>-811.0</amount>
-        <article>
-            <title>Продукты</title>
-        </article>
-        <date>2022-02-15T00:21:01.826+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
-        </account>
-        <amount>-954.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-03-05T03:52:46.612+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелек</title>
-        </account>
-        <amount>-541.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-02-23T13:48:52.556+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
-        </account>
-        <amount>-236.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-03-01T23:08:03.186+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
-        </account>
-        <amount>-888.0</amount>
-        <article>
-            <title>Продукты</title>
-        </article>
-        <date>2022-03-08T15:22:31.949+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
-        </account>
-        <amount>-28.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-02-14T02:47:50.007+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелек</title>
-        </account>
-        <amount>-159.0</amount>
-        <article>
-            <title>Продукты</title>
-        </article>
-        <date>2022-02-19T05:32:17.434+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
-        </account>
-        <amount>-916.0</amount>
-        <article>
-            <title>Продукты</title>
-        </article>
-        <date>2022-03-06T19:08:04.918+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелек</title>
-        </account>
-        <amount>-651.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-02-12T04:29:35.628+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелек</title>
-        </account>
-        <amount>-641.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-02-26T12:39:00.122+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
-        </account>
-        <amount>-895.0</amount>
-        <article>
-            <title>Продукты</title>
-        </article>
-        <date>2022-03-10T06:23:02.592+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
-        </account>
-        <amount>-511.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-03-08T17:58:58.735+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
-        </account>
-        <amount>-628.0</amount>
-        <article>
-            <title>Продукты</title>
-        </article>
-        <date>2022-03-03T03:11:50.389+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелек</title>
-        </account>
-        <amount>-265.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-02-11T11:39:05.426+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
-        </account>
-        <amount>-788.0</amount>
-        <article>
-            <title>Продукты</title>
-        </article>
-        <date>2022-02-18T05:42:55.257+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелек</title>
-        </account>
-        <amount>-309.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-02-11T07:04:25.822+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелек</title>
-        </account>
-        <amount>-28.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-03-03T00:58:02.171+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелек</title>
-        </account>
-        <amount>-465.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-02-12T06:18:29.908+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
+            <title>Ежедневный (Тинькофф)</title>
         </account>
         <amount>-531.0</amount>
         <article>
-            <title>Зарплата</title>
+            <title>Продукты</title>
         </article>
-        <date>2022-02-18T13:37:00.931+03:00</date>
+        <date>2022-03-02T12:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>45000.0</startAmount>
+            <title>Райффайзен</title>
+        </account>
+        <amount>-161.0</amount>
+        <article>
+            <title>Здоровье</title>
+        </article>
+        <date>2022-03-02T00:00:00+03:00</date>
         <notice></notice>
     </transactions>
     <transactions>
@@ -1025,32 +643,51 @@
                 <title>Рубль</title>
             </currency>
             <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
+            <title>Ежедневный (Тинькофф)</title>
         </account>
-        <amount>-606.0</amount>
+        <amount>-471.0</amount>
+        <article>
+            <title>Маленькие шалости</title>
+        </article>
+        <date>2022-03-02T00:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
+        </account>
+        <amount>-657.0</amount>
+        <article>
+            <title>Подарки</title>
+        </article>
+        <date>2022-03-02T00:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
+        </account>
+        <amount>-831.0</amount>
         <article>
             <title>Продукты</title>
         </article>
-        <date>2022-03-01T05:56:54.608+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелек</title>
-        </account>
-        <amount>-146.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-03-04T18:43:28.791+03:00</date>
+        <date>2022-03-01T02:19:47.770+03:00</date>
         <notice></notice>
     </transactions>
     <transactions>
@@ -1063,13 +700,13 @@
                 <title>Рубль</title>
             </currency>
             <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
+            <title>Ежедневный (Тинькофф)</title>
         </account>
-        <amount>-854.0</amount>
+        <amount>-420.0</amount>
         <article>
-            <title>Зарплата</title>
+            <title>Здоровье</title>
         </article>
-        <date>2022-03-03T02:36:40.079+03:00</date>
+        <date>2022-03-01T00:00:00+03:00</date>
         <notice></notice>
     </transactions>
     <transactions>
@@ -1082,32 +719,13 @@
                 <title>Рубль</title>
             </currency>
             <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
+            <title>Ежедневный (Тинькофф)</title>
         </account>
-        <amount>-112.0</amount>
-        <article>
-            <title>Зарплата</title>
-        </article>
-        <date>2022-02-16T17:19:14.382+03:00</date>
-        <notice></notice>
-    </transactions>
-    <transactions>
-        <account>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
-        </account>
-        <amount>-211.0</amount>
+        <amount>-944.0</amount>
         <article>
             <title>Продукты</title>
         </article>
-        <date>2022-02-10T03:27:15.279+03:00</date>
+        <date>2022-02-28T12:47:01.373+03:00</date>
         <notice></notice>
     </transactions>
     <transactions>
@@ -1119,14 +737,14 @@
                 <rate>1.0</rate>
                 <title>Рубль</title>
             </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
+            <startAmount>45000.0</startAmount>
+            <title>Райффайзен</title>
         </account>
-        <amount>-882.0</amount>
+        <amount>-793.0</amount>
         <article>
-            <title>Зарплата</title>
+            <title>Развлечения</title>
         </article>
-        <date>2022-02-18T22:13:38.491+03:00</date>
+        <date>2022-02-28T12:00:00+03:00</date>
         <notice></notice>
     </transactions>
     <transactions>
@@ -1139,17 +757,644 @@
                 <title>Рубль</title>
             </currency>
             <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
+            <title>Ежедневный (Тинькофф)</title>
         </account>
-        <amount>-776.0</amount>
+        <amount>-84.0</amount>
         <article>
             <title>Продукты</title>
         </article>
-        <date>2022-02-20T11:09:47.371+03:00</date>
+        <date>2022-02-28T12:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
+        </account>
+        <amount>44000.0</amount>
+        <article>
+            <title>Зарплата</title>
+        </article>
+        <date>2022-02-28T12:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
+        </account>
+        <amount>-220.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-02-28T10:47:16.961+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
+        </account>
+        <amount>-248.0</amount>
+        <article>
+            <title>Транспорт</title>
+        </article>
+        <date>2022-02-27T12:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
+        </account>
+        <amount>-861.0</amount>
+        <article>
+            <title>Транспорт</title>
+        </article>
+        <date>2022-02-26T12:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>45000.0</startAmount>
+            <title>Райффайзен</title>
+        </account>
+        <amount>-661.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-02-25T19:31:43.480+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>45000.0</startAmount>
+            <title>Райффайзен</title>
+        </account>
+        <amount>-933.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-02-25T16:21:41.287+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
+        </account>
+        <amount>-195.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-02-24T23:56:51.261+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>45000.0</startAmount>
+            <title>Райффайзен</title>
+        </account>
+        <amount>-922.0</amount>
+        <article>
+            <title>Спорт</title>
+        </article>
+        <date>2022-02-24T00:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
+        </account>
+        <amount>-4693.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-02-23T12:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>45000.0</startAmount>
+            <title>Райффайзен</title>
+        </account>
+        <amount>-11585.0</amount>
+        <article>
+            <title>Транспорт</title>
+        </article>
+        <date>2022-02-22T12:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
+        </account>
+        <amount>-364.0</amount>
+        <article>
+            <title>Здоровье</title>
+        </article>
+        <date>2022-02-22T00:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>45000.0</startAmount>
+            <title>Райффайзен</title>
+        </account>
+        <amount>-301.0</amount>
+        <article>
+            <title>Транспорт</title>
+        </article>
+        <date>2022-02-21T12:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
+        </account>
+        <amount>-176.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-02-20T19:45:15.620+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
+        </account>
+        <amount>-208.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-02-20T12:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>107000.0</startAmount>
+            <title>Тинькофф</title>
+        </account>
+        <amount>-17640.0</amount>
+        <article>
+            <title>Квартира (аренда, ЖКХ)</title>
+        </article>
+        <date>2022-02-20T12:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
+        </account>
+        <amount>-597.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-02-19T12:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>45000.0</startAmount>
+            <title>Райффайзен</title>
+        </account>
+        <amount>-524.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-02-18T10:54:18.407+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>45000.0</startAmount>
+            <title>Райффайзен</title>
+        </account>
+        <amount>-21.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-02-18T02:05:23.001+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
+        </account>
+        <amount>-1235.0</amount>
+        <article>
+            <title>Кафе</title>
+        </article>
+        <date>2022-02-17T12:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
+        </account>
+        <amount>-364.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-02-17T08:25:57.382+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>45000.0</startAmount>
+            <title>Райффайзен</title>
+        </account>
+        <amount>-235.0</amount>
+        <article>
+            <title>Маленькие шалости</title>
+        </article>
+        <date>2022-02-16T12:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
+        </account>
+        <amount>-415.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-02-16T06:53:20.971+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>45000.0</startAmount>
+            <title>Райффайзен</title>
+        </account>
+        <amount>-152.0</amount>
+        <article>
+            <title>Подарки</title>
+        </article>
+        <date>2022-02-16T00:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
+        </account>
+        <amount>-46.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-02-15T23:52:37.817+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>107000.0</startAmount>
+            <title>Тинькофф</title>
+        </account>
+        <amount>40000.0</amount>
+        <article>
+            <title>Зарплата</title>
+        </article>
+        <date>2022-02-15T12:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>45000.0</startAmount>
+            <title>Райффайзен</title>
+        </account>
+        <amount>-570.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-02-15T05:53:19.369+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>45000.0</startAmount>
+            <title>Райффайзен</title>
+        </account>
+        <amount>-232.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-02-14T20:06:04.096+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
+        </account>
+        <amount>-690.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-02-13T19:54:34.986+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
+        </account>
+        <amount>7500.0</amount>
+        <article>
+            <title>Инвестиции</title>
+        </article>
+        <date>2022-02-13T12:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>45000.0</startAmount>
+            <title>Райффайзен</title>
+        </account>
+        <amount>-499.0</amount>
+        <article>
+            <title>Подарки</title>
+        </article>
+        <date>2022-02-13T12:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
+        </account>
+        <amount>-193.0</amount>
+        <article>
+            <title>Транспорт</title>
+        </article>
+        <date>2022-02-13T12:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
+        </account>
+        <amount>-2834.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-02-09T12:00:00+03:00</date>
+        <notice></notice>
+    </transactions>
+    <transactions>
+        <account>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
+        </account>
+        <amount>-3649.0</amount>
+        <article>
+            <title>Продукты</title>
+        </article>
+        <date>2022-02-03T12:00:00+03:00</date>
         <notice></notice>
     </transactions>
     <transfers>
-        <date>2022-03-11T11:19:00.678+03:00</date>
+        <date>2022-03-11T12:00:00+03:00</date>
         <fromAccount>
             <currency>
                 <base>true</base>
@@ -1158,10 +1403,10 @@
                 <rate>1.0</rate>
                 <title>Рубль</title>
             </currency>
-            <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
+            <startAmount>26843.0</startAmount>
+            <title>Наличные</title>
         </fromAccount>
-        <fromAmount>25000.0</fromAmount>
+        <fromAmount>7500.0</fromAmount>
         <notice></notice>
         <toAccount>
             <currency>
@@ -1171,13 +1416,69 @@
                 <rate>1.0</rate>
                 <title>Рубль</title>
             </currency>
-            <startAmount>1000.0</startAmount>
-            <title>Кошелек</title>
+            <startAmount>22750.0</startAmount>
+            <title>Сбер</title>
         </toAccount>
-        <toAmount>25000.0</toAmount>
+        <toAmount>7500.0</toAmount>
     </transfers>
     <transfers>
-        <date>2022-03-11T11:19:00.678+03:00</date>
+        <date>2022-03-09T12:00:00+03:00</date>
+        <fromAccount>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>22750.0</startAmount>
+            <title>Сбер</title>
+        </fromAccount>
+        <fromAmount>10000.0</fromAmount>
+        <notice></notice>
+        <toAccount>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Ежедневный (Тинькофф)</title>
+        </toAccount>
+        <toAmount>10000.0</toAmount>
+    </transfers>
+    <transfers>
+        <date>2022-03-01T12:00:00+03:00</date>
+        <fromAccount>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>107000.0</startAmount>
+            <title>Тинькофф</title>
+        </fromAccount>
+        <fromAmount>15000.0</fromAmount>
+        <notice></notice>
+        <toAccount>
+            <currency>
+                <base>false</base>
+                <code>USD</code>
+                <on>true</on>
+                <rate>115.1963</rate>
+                <title>Доллар</title>
+            </currency>
+            <startAmount>2700.0</startAmount>
+            <title>Сберегательный счет, USD</title>
+        </toAccount>
+        <toAmount>130.0</toAmount>
+    </transfers>
+    <transfers>
+        <date>2022-02-28T12:00:00+03:00</date>
         <fromAccount>
             <currency>
                 <base>true</base>
@@ -1187,7 +1488,63 @@
                 <title>Рубль</title>
             </currency>
             <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
+            <title>Ежедневный (Тинькофф)</title>
+        </fromAccount>
+        <fromAmount>6000.0</fromAmount>
+        <notice></notice>
+        <toAccount>
+            <currency>
+                <base>false</base>
+                <code>USD</code>
+                <on>true</on>
+                <rate>115.1963</rate>
+                <title>Доллар</title>
+            </currency>
+            <startAmount>2700.0</startAmount>
+            <title>Сберегательный счет, USD</title>
+        </toAccount>
+        <toAmount>90.0</toAmount>
+    </transfers>
+    <transfers>
+        <date>2022-02-24T12:00:00+03:00</date>
+        <fromAccount>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>107000.0</startAmount>
+            <title>Тинькофф</title>
+        </fromAccount>
+        <fromAmount>100000.0</fromAmount>
+        <notice>...</notice>
+        <toAccount>
+            <currency>
+                <base>false</base>
+                <code>CNY</code>
+                <on>true</on>
+                <rate>18.2218</rate>
+                <title>Юань</title>
+            </currency>
+            <startAmount>0.0</startAmount>
+            <title>Сберегательный счет, CNY</title>
+        </toAccount>
+        <toAmount>7273.5</toAmount>
+    </transfers>
+    <transfers>
+        <date>2022-02-09T12:00:00+03:00</date>
+        <fromAccount>
+            <currency>
+                <base>true</base>
+                <code>RUB</code>
+                <on>true</on>
+                <rate>1.0</rate>
+                <title>Рубль</title>
+            </currency>
+            <startAmount>107000.0</startAmount>
+            <title>Тинькофф</title>
         </fromAccount>
         <fromAmount>30000.0</fromAmount>
         <notice></notice>
@@ -1199,37 +1556,9 @@
                 <rate>1.0</rate>
                 <title>Рубль</title>
             </currency>
-            <startAmount>100000.0</startAmount>
-            <title>Депозит 1</title>
-        </toAccount>
-        <toAmount>36000.0</toAmount>
-    </transfers>
-    <transfers>
-        <date>2022-03-11T11:19:00.678+03:00</date>
-        <fromAccount>
-            <currency>
-                <base>true</base>
-                <code>RUB</code>
-                <on>true</on>
-                <rate>1.0</rate>
-                <title>Рубль</title>
-            </currency>
             <startAmount>0.0</startAmount>
-            <title>Карта VISA</title>
-        </fromAccount>
-        <fromAmount>6000.0</fromAmount>
-        <notice></notice>
-        <toAccount>
-            <currency>
-                <base>false</base>
-                <code>USD</code>
-                <on>true</on>
-                <rate>65.0</rate>
-                <title>Доллар</title>
-            </currency>
-            <startAmount>0.0</startAmount>
-            <title>Депозит 2</title>
+            <title>Ежедневный (Тинькофф)</title>
         </toAccount>
-        <toAmount>90.0</toAmount>
+        <toAmount>30000.0</toAmount>
     </transfers>
 </data>

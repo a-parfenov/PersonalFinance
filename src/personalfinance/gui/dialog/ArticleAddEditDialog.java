@@ -1,12 +1,11 @@
 package personalfinance.gui.dialog;
 
+import javax.swing.JTextField;
 import personalfinance.exception.ModelException;
 import personalfinance.gui.MainFrame;
 import personalfinance.model.Article;
-import personalfinance.settings.Style;
 import personalfinance.model.Common;
-
-import javax.swing.*;
+import personalfinance.settings.Style;
 
 public class ArticleAddEditDialog extends AddEditDialog {
 
@@ -17,7 +16,7 @@ public class ArticleAddEditDialog extends AddEditDialog {
     @Override
     protected void init() {
         components.put("LABEL_TITLE", new JTextField());
-
+        
         icons.put("LABEL_TITLE", Style.ICON_TITLE);
     }
 
@@ -32,4 +31,5 @@ public class ArticleAddEditDialog extends AddEditDialog {
         String title = ((JTextField) components.get("LABEL_TITLE")).getText();
         return new Article(title);
     }
+    
 }

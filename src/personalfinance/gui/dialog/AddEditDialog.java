@@ -1,32 +1,44 @@
 package personalfinance.gui.dialog;
 
+import java.awt.BorderLayout;
+import java.awt.Component;
+import java.util.Date;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import javax.swing.Box;
+import javax.swing.BoxLayout;
+import javax.swing.DefaultListCellRenderer;
+import javax.swing.ImageIcon;
+import javax.swing.JComboBox;
+import javax.swing.JComponent;
+import javax.swing.JDialog;
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
 import org.jdatepicker.impl.JDatePickerImpl;
 import org.jdatepicker.impl.UtilDateModel;
 import personalfinance.exception.ModelException;
 import personalfinance.gui.MainButton;
 import personalfinance.gui.MainFrame;
+import personalfinance.gui.handler.AddEditDialogHandler;
 import personalfinance.model.Common;
 import personalfinance.settings.HandlerCode;
 import personalfinance.settings.Style;
 import personalfinance.settings.Text;
 
-import javax.swing.*;
-import java.awt.*;
-import java.util.Date;
-import java.util.LinkedHashMap;
-import java.util.Map;
-
-public abstract class AddEditDialog extends JDialog {
-
+abstract public class AddEditDialog extends JDialog {
+    
     private final MainFrame frame;
     protected LinkedHashMap<String, JComponent> components = new LinkedHashMap();
     protected LinkedHashMap<String, ImageIcon> icons = new LinkedHashMap();
     protected LinkedHashMap<String, Object> values = new LinkedHashMap();
     protected Common c;
-
+    
     public AddEditDialog(MainFrame frame) {
         super(frame, Text.get("ADD"), true);
         this.frame = frame;
+        addWindowListener(new AddEditDialogHandler(frame, this));
         setResizable(false);
     }
 
@@ -37,12 +49,12 @@ public abstract class AddEditDialog extends JDialog {
     public void setCommon(Common c) {
         this.c = c;
     }
-
+    
     public final void showDialog() {
         setDialog();
         setVisible(true);
     }
-
+    
     public final void closeDialog() {
         setVisible(false);
         this.c = null;
@@ -51,17 +63,17 @@ public abstract class AddEditDialog extends JDialog {
         values.clear();
         dispose();
     }
-
+    
     public boolean isAdd() {
         return c == null;
     }
-
+    
     abstract public Common getCommonFromForm() throws ModelException;
-
+    
     abstract protected void init();
-
+    
     abstract protected void setValues();
-
+    
     private void setDialog() {
         init();
         if (isAdd()) {
@@ -81,7 +93,7 @@ public abstract class AddEditDialog extends JDialog {
             JLabel label = new JLabel(Text.get(key));
             label.setIcon(icons.get(key));
             label.setFont(Style.FONT_DIALOG_LABEL);
-
+            
             JComponent component = entry.getValue();
             if (component instanceof JTextField) {
                 component.setPreferredSize(Style.DIMENSION_DIALOG_TEXTFIELD_SIZE);
@@ -93,35 +105,36 @@ public abstract class AddEditDialog extends JDialog {
             else if (component instanceof JDatePickerImpl) {
                 if (values.containsKey(key)) ((UtilDateModel) ((JDatePickerImpl) component).getModel()).setValue((Date) values.get(key));
             }
+            component.addKeyListener(new AddEditDialogHandler(frame, this));
             component.setAlignmentX(JComponent.LEFT_ALIGNMENT);
             add(label);
             add(Box.createVerticalStrut(Style.PADDING_DIALOG));
             add(component);
             add(Box.createVerticalStrut(Style.PADDING_DIALOG));
         }
-
-        MainButton ok = new MainButton(Text.get("ADD"), Style.ICON_OK, null, HandlerCode.ADD);
+    
+        MainButton ok = new MainButton(Text.get("ADD"), Style.ICON_OK, new AddEditDialogHandler(frame, this), HandlerCode.ADD);
         if (!isAdd()) {
             ok.setActionCommand(HandlerCode.EDIT);
             ok.setText(Text.get("EDIT"));
         }
-
-        MainButton cancel = new MainButton(Text.get("CANCEL"), Style.ICON_CANCEL, null, HandlerCode.CANCEL);
-
+        
+        MainButton cancel = new MainButton(Text.get("CANCEL"), Style.ICON_CANCEL, new AddEditDialogHandler(frame, this), HandlerCode.CANCEL);
+        
         JPanel panelButtons = new JPanel();
         panelButtons.setLayout(new BorderLayout());
         panelButtons.setAlignmentX(JPanel.LEFT_ALIGNMENT);
         panelButtons.add(ok, BorderLayout.WEST);
         panelButtons.add(Box.createRigidArea(Style.DIMENSION_DIALOG_PADDING_BUTTON), BorderLayout.CENTER);
         panelButtons.add(cancel, BorderLayout.EAST);
-
+        
         add(panelButtons);
         pack();
         setLocationRelativeTo(null);
     }
-
+    
     protected class CommonComboBox extends JComboBox {
-
+        
         public CommonComboBox(Object[] objs) {
             super(objs);
             setRenderer(new DefaultListCellRenderer() {
@@ -134,6 +147,6 @@ public abstract class AddEditDialog extends JDialog {
                 }
             });
         }
-
+        
     }
 }

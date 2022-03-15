@@ -15,11 +15,11 @@ import personalfinance.settings.Style;
 import personalfinance.settings.Text;
 
 public final class Chart {
-
+    
     private DefaultPieDataset dataset;
     private final String title;
     private final String currencyTitle;
-
+    
     public Chart(HashMap<String, Double> data, String title, String currencyTitle) {
         setData(data);
         this.title = Text.get(title);
@@ -32,7 +32,7 @@ public final class Chart {
             dataset.setValue(entry.getKey(), entry.getValue());
         }
     }
-
+    
     public JPanel getPanel() {
         JFreeChart chart = ChartFactory.createPieChart3D(title, dataset, true, true, false);
         PiePlot plot = (PiePlot) chart.getPlot();
@@ -47,5 +47,4 @@ public final class Chart {
         }
         return panel;
     }
-
 }

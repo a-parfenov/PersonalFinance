@@ -5,17 +5,17 @@ import personalfinance.saveload.SaveData;
 import personalfinance.settings.Format;
 
 public class CurrencyTableModel extends MainTableModel {
-
+    
     private static final int TITLE = 0;
     private static final int CODE = 1;
     private static final int RATE = 2;
     private static final int ON = 3;
     private static final int BASE = 4;
-
+    
     public CurrencyTableModel(String[] columns) {
         super(SaveData.getInstance().getCurrencies(), columns);
     }
-
+    
     @Override
     protected void updateData() {
         data = SaveData.getInstance().getCurrencies();
@@ -39,4 +39,5 @@ public class CurrencyTableModel extends MainTableModel {
         }
         return null;
     }
+    
 }

@@ -1,62 +1,62 @@
 package personalfinance.saveload;
 
-import personalfinance.model.*;
-
+import java.util.List;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
-import java.util.List;
+import personalfinance.model.*;
 
 @XmlRootElement(name = "data")
 public class Wrapper {
-
+    
     private List<Article> articles;
-    private List<Currency> currency;
     private List<Account> accounts;
-    private List<Transactions> transactions;
+    private List<Transaction> transactions;
     private List<Transfer> transfers;
-
+    private List<Currency> currencies;
+    
     @XmlElement(name = "articles")
-    public List<Article> getArticle() {
+    public List<Article> getArticles() {
         return articles;
     }
 
-    public void setArticle(List<Article> article) {
-        this.articles = article;
+    public void setArticles(List<Article> articles) {
+        this.articles = articles;
     }
-
-    @XmlElement(name = "currency")
-    public List<Currency> getCurrency() {
-        return currency;
-    }
-
-    public void setCurrency(List<Currency> currency) {
-        this.currency = currency;
-    }
-
+    
     @XmlElement(name = "accounts")
-    public List<Account> getAccount() {
+    public List<Account> getAccounts() {
         return accounts;
     }
 
-    public void setAccount(List<Account> account) {
-        this.accounts = account;
+    public void setAccounts(List<Account> accounts) {
+        this.accounts = accounts;
     }
-
+    
     @XmlElement(name = "transactions")
-    public List<Transactions> getTransactions() {
+    public List<Transaction> getTransactions() {
         return transactions;
     }
 
-    public void setTransactions(List<Transactions> transactions) {
+    public void setTransactions(List<Transaction> transactions) {
         this.transactions = transactions;
     }
-
+    
     @XmlElement(name = "transfers")
-    public List<Transfer> getTransferList() {
+    public List<Transfer> getTransfers() {
         return transfers;
     }
 
-    public void setTransferList(List<Transfer> transferList) {
-        this.transfers = transferList;
+    public void setTransfers(List<Transfer> transfers) {
+        this.transfers = transfers;
     }
+    
+    @XmlElement(name = "currencies")
+    public List<Currency> getCurrencies() {
+        return currencies;
+    }
+
+    public void setCurrencies(List<Currency> currencies) {
+        this.currencies = currencies;
+    }
+
 }

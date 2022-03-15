@@ -1,11 +1,11 @@
 package personalfinance.gui.handler;
 
+import java.awt.event.ActionEvent;
 import personalfinance.gui.MainFrame;
 import personalfinance.settings.HandlerCode;
-import java.awt.event.ActionEvent;
 
-public class MenuEditHandler extends Handler{
-
+public class MenuEditHandler extends Handler {
+    
     public MenuEditHandler(MainFrame frame) {
         super(frame);
     }
@@ -25,8 +25,9 @@ public class MenuEditHandler extends Handler{
             case HandlerCode.MENU_EDIT_DELETE: {
                 handler.delete();
             }
-
+            
         }
         super.actionPerformed(ae);
     }
+    
 }

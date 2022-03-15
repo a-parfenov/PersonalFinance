@@ -20,17 +20,17 @@ public class CurrencyAddEditDialog extends AddEditDialog {
     @Override
     protected void init() {
         components.put("LABEL_TITLE", new JTextField());
-        components.put("LABEL_CODE", new JComboBox(Settings.CURRENCY_CODES));
+        components.put("LABEL_CODE", new JComboBox(Settings.CURRENCIES_CODES));
         components.put("LABEL_RATE", new JTextField());
         components.put("LABEL_ON", new JComboBox(new String[]{Text.get("YES"), Text.get("NO")}));
         components.put("LABEL_BASE", new JComboBox(new String[]{Text.get("YES"), Text.get("NO")}));
-
+        
         icons.put("LABEL_TITLE", Style.ICON_TITLE);
         icons.put("LABEL_CODE", Style.ICON_CODE);
         icons.put("LABEL_RATE", Style.ICON_RATE);
         icons.put("LABEL_ON", Style.ICON_ON);
         icons.put("LABEL_BASE", Style.ICON_BASE);
-
+        
         values.put("LABEL_RATE", Format.amount(1));
     }
 

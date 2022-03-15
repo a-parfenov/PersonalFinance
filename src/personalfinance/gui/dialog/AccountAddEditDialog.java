@@ -1,5 +1,6 @@
 package personalfinance.gui.dialog;
 
+import javax.swing.JTextField;
 import personalfinance.exception.ModelException;
 import personalfinance.gui.MainFrame;
 import personalfinance.model.Account;
@@ -9,9 +10,7 @@ import personalfinance.saveload.SaveData;
 import personalfinance.settings.Format;
 import personalfinance.settings.Style;
 
-import javax.swing.*;
-
-public class AccountAddEditDialog extends AddEditDialog{
+public class AccountAddEditDialog extends AddEditDialog {
 
     public AccountAddEditDialog(MainFrame frame) {
         super(frame);
@@ -22,11 +21,11 @@ public class AccountAddEditDialog extends AddEditDialog{
         components.put("LABEL_TITLE", new JTextField());
         components.put("LABEL_CURRENCY", new CommonComboBox(SaveData.getInstance().getEnableCurrencies().toArray()));
         components.put("LABEL_START_AMOUNT", new JTextField());
-
+        
         icons.put("LABEL_TITLE", Style.ICON_TITLE);
         icons.put("LABEL_CURRENCY", Style.ICON_CURRENCY);
         icons.put("LABEL_START_AMOUNT", Style.ICON_AMOUNT);
-
+        
         values.put("LABEL_START_AMOUNT", Format.amount(0));
     }
 

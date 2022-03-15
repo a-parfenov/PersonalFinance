@@ -6,7 +6,7 @@ import personalfinance.gui.dialog.AboutDialog;
 import personalfinance.settings.HandlerCode;
 
 public class MenuHelpHandler extends Handler {
-
+    
     public MenuHelpHandler(MainFrame frame) {
         super(frame);
     }
@@ -20,5 +20,5 @@ public class MenuHelpHandler extends Handler {
         }
         super.actionPerformed(ae);
     }
-
+    
 }

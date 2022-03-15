@@ -1,9 +1,5 @@
 package personalfinance.gui.handler;
 
-/**
-* Удаляет строки, выводит диалоговые окна (на удаление или на редактирование)
-*/
-
 import java.awt.event.ActionEvent;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
@@ -20,14 +16,14 @@ import personalfinance.saveload.SaveData;
 import personalfinance.settings.HandlerCode;
 
 public class FunctionsHandler extends Handler implements MouseListener, KeyListener {
-
+    
     private final AddEditDialog dialog;
-
+    
     public FunctionsHandler(MainFrame frame, AddEditDialog dialog) {
         super(frame);
         this.dialog = dialog;
     }
-
+    
     @Override
     public void actionPerformed(ActionEvent ae) {
         switch (ae.getActionCommand()) {
@@ -100,15 +96,16 @@ public class FunctionsHandler extends Handler implements MouseListener, KeyListe
             }
         }
     }
-
+    
     private Common getSelectedCommon() {
         TableData td = frame.getRightPanel().getTableData();
         Common c = ((MainTableModel) td.getModel()).getCommonByRow(td.getSelectedRow());
         return c;
     }
-
+    
     private void showAddEditDialog(Common c) {
         dialog.setCommon(c);
         dialog.showDialog();
     }
+    
 }
